@@ -71,7 +71,7 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
 .site-nav { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-family: var(--mono); font-size: 14px; }
 .site-nav a { padding: 12px 14px; text-decoration: none; }
 .site-nav a.cta { padding: 12px 18px; background: var(--ink); color: var(--bg); border-radius: 6px; margin-left: 8px; }
-.menu { display: none; }
+.menu, .cta-short { display: none; }
 @media (max-width: 760px) { .site-nav > a:not(.cta) { display: none; } }
 
 /* Hero */
@@ -205,4 +205,11 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
   .person { flex-direction: column; flex-wrap: nowrap; align-items: center; text-align: center; }
   .face { flex: none; width: 184px; }
   .person-text { flex: none; align-items: center; max-width: 34ch; }
+}
+
+/* Narrow phones: shorter header button so the wordmark fits */
+@media (max-width: 359px) {
+  .cta-long { display: none; }
+  .cta-short { display: inline; }
+  .site-nav a.cta { padding: 0 10px; }
 }
