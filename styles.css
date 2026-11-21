@@ -196,3 +196,13 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
   .hero .btn { width: 100%; text-align: center; border: 1px solid var(--ink); }
   .hero .btn-primary { border-color: var(--accent); }
 }
+
+/* Phones: Who we are stacks and centres */
+@media (max-width: 520px) {
+  .who .section-head { flex-direction: column; align-items: center; text-align: center; }
+  .who .section-head > div { align-items: center; }
+  .who .lede { max-width: 32ch; }
+  .person { flex-direction: column; flex-wrap: nowrap; align-items: center; text-align: center; }
+  .face { flex: none; width: 184px; }
+  .person-text { flex: none; align-items: center; max-width: 34ch; }
+}
