@@ -191,4 +191,8 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
   .how .wrap { padding-top: 48px; padding-bottom: 48px; gap: 36px; }
   .who .wrap { padding-top: 56px; }
   .contact { padding-top: 60px; padding-bottom: 60px; }
+
+  .hero .buttons { flex-direction: column; flex-wrap: nowrap; gap: 12px; }
+  .hero .btn { width: 100%; text-align: center; border: 1px solid var(--ink); }
+  .hero .btn-primary { border-color: var(--accent); }
 }
