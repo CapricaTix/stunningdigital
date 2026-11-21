@@ -208,7 +208,7 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
 }
 
 /* Narrow phones: shorter header button so the wordmark fits */
-@media (max-width: 359px) {
+@media (max-width: 374px) {
   .cta-long { display: none; }
   .cta-short { display: inline; }
   .site-nav a.cta { padding: 0 10px; }
