@@ -213,3 +213,14 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
   .cta-short { display: inline; }
   .site-nav a.cta { padding: 0 10px; }
 }
+
+/* Desktop: sticky header too. The background and bottom line run the full width of the window. */
+@media (min-width: 761px) {
+  .site-header { position: sticky; top: 0; z-index: 10; background: var(--bg); border-image: linear-gradient(to bottom, var(--bg) calc(100% - 1px), var(--line) calc(100% - 1px)) fill 0 / 0 / 0 100vmax; }
+  .hero { border-top: 0; }
+  main, main section[id] { scroll-margin-top: 92px; }
+}
+/* Between phone and desktop widths the header wraps onto two rows, so it is taller */
+@media (min-width: 761px) and (max-width: 937px) {
+  main, main section[id] { scroll-margin-top: 150px; }
+}
