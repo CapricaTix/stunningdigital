@@ -1,6 +1,6 @@
 # stunningdigital.com
 
-The Stunning Digital website. Plain HTML and CSS, no build step, hosted on GitHub Pages.
+The Stunning Digital website. Plain HTML and CSS, no build step, hosted on Netlify from this repo.
 
 ## Files
 
@@ -14,9 +14,11 @@ The Stunning Digital website. Plain HTML and CSS, no build step, hosted on GitHu
 
 ## Editing
 
-Edit the HTML directly and push. GitHub Pages republishes within a minute or two.
+Edit the HTML directly and push to `main`. Netlify republishes within a minute or two.
 
-## Going live on stunningdigital.com
+## Hosting
 
-Not yet. The old Bolt site stays up until this one is tested on its GitHub Pages address.
-The domain switch (custom domain in Pages settings, a `CNAME` file) happens only after that.
+- Live at https://stunningdigital.com. The www address and plain http both redirect there.
+- Netlify project `stunningdigital`, deploying from `main` with the repo root as the publish directory. There is no build command.
+- Netlify also serves the site at https://stunningdigital.netlify.app, which is handy for checking a change.
+- GitHub Pages was the previous host. The `CNAME` file is left over from that and Netlify ignores it.
