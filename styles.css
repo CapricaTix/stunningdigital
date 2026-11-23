@@ -72,7 +72,7 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
 .site-nav a { padding: 12px 14px; text-decoration: none; }
 .site-nav a.cta { padding: 12px 18px; background: var(--ink); color: var(--bg); border-radius: 6px; margin-left: 8px; }
 .menu, .cta-short { display: none; }
-@media (max-width: 760px) { .site-nav > a:not(.cta) { display: none; } }
+@media (max-width: 937px) { .site-nav > a:not(.cta) { display: none; } }
 
 /* Hero */
 .hero { background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 32px 32px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -166,8 +166,8 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
 
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* Phones: one-row sticky header with a menu, and tighter section spacing */
-@media (max-width: 760px) {
+/* Phones, tablets and narrow windows: one-row sticky header with a menu */
+@media (max-width: 937px) {
   .site-header { position: sticky; top: 0; z-index: 10; flex-wrap: nowrap; gap: 8px; padding-top: 10px; padding-bottom: 10px; background: var(--bg); border-bottom: 1px solid var(--line); }
   .brand { gap: 8px; min-width: 0; }
   .brand svg { width: 30px; height: 30px; flex: none; }
@@ -185,6 +185,10 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
   main, main section[id] { scroll-margin-top: 64px; }
 
   .hero { border-top: 0; }
+}
+
+/* Phones: tighter section spacing and full-width hero buttons */
+@media (max-width: 760px) {
   .hero .wrap { padding-top: 48px; padding-bottom: 48px; }
   .band .wrap { padding-top: 56px; padding-bottom: 56px; gap: 36px; }
   .work .wrap { padding-top: 56px; padding-bottom: 48px; }
@@ -215,12 +219,8 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 600; letter-spacing: -0
 }
 
 /* Desktop: sticky header too. The background and bottom line run the full width of the window. */
-@media (min-width: 761px) {
+@media (min-width: 938px) {
   .site-header { position: sticky; top: 0; z-index: 10; background: var(--bg); border-image: linear-gradient(to bottom, var(--bg) calc(100% - 1px), var(--line) calc(100% - 1px)) fill 0 / 0 / 0 100vmax; }
   .hero { border-top: 0; }
   main, main section[id] { scroll-margin-top: 92px; }
-}
-/* Between phone and desktop widths the header wraps onto two rows, so it is taller */
-@media (min-width: 761px) and (max-width: 937px) {
-  main, main section[id] { scroll-margin-top: 150px; }
 }
